@@ -18,6 +18,7 @@ import {
   ordersListQueryKeyRoot,
 } from "@/lib/query-keys";
 import { useOrderDetailQuery } from "@/hooks/useOrderDetailQuery";
+import { OrderNoteButton } from "@/components/orders/order-note";
 import { useShippingZonesQuery } from "@/hooks/useShippingZonesQuery";
 import { useShippingMethodsQuery } from "@/hooks/useShippingMethodsQuery";
 import { useBranding } from "@/context/BrandingContext";
@@ -662,6 +663,7 @@ export default function OrderDetailPage() {
             >
               #S-{formatOrderNumber(order.order_number)}
             </h1>
+            <OrderNoteButton order={order} className="-ml-1" onSaved={() => invalidateOrdersCaches()} />
           </div>
           <nav className="flex flex-wrap items-center gap-1 text-sm text-muted-foreground">
             <ClickableText

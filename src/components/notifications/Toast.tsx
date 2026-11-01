@@ -217,7 +217,7 @@ export function Toast({ variant, message, title, action, iconName, onClose }: To
               "dark:hover:bg-zinc-800 dark:active:bg-zinc-700",
             )}
           >
-            {action ? "Secondary" : "Dismiss"}
+            {action ? tCommon("close") : "Dismiss"}
           </button>
 
           {/* Primary */}

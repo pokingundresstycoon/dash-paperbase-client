@@ -131,6 +131,10 @@ export interface Order {
     | "unknown";
   delivery_status_updated_at: string | null;
   last_tracking_message: string;
+  /** The team's one note on this order; never shown to the shopper. */
+  merchant_note?: string;
+  merchant_note_updated_at?: string | null;
+  merchant_note_updated_by?: string;
   items?: OrderItem[];
   items_count?: number;
   has_unavailable_products?: boolean;

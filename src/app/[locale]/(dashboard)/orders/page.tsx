@@ -58,6 +58,7 @@ import {
 } from "@/lib/query-keys";
 import { useQueryClient } from "@tanstack/react-query";
 
+import { OrderNoteButton } from "@/components/orders/order-note";
 import { OrderPreviewTriggerButton } from "@/components/orders/order-preview";
 import { FraudCheckButton } from "./_components/FraudCheckButton";
 import { AutopilotStatusPill } from "./_components/AutopilotStatusPill";
@@ -1307,6 +1308,18 @@ export default function OrdersPage() {
                             >
                               {formatOrderNumber(order.order_number)}
                             </span>
+                            <OrderNoteButton
+                              order={order}
+                              className="-my-2 -ml-3 md:-ml-1.5"
+                              onSaved={(note) => {
+                                patchOrdersList((prev) =>
+                                  prev.map((o) =>
+                                    o.public_id === order.public_id ? { ...o, ...note } : o
+                                  )
+                                );
+                                invalidateOrdersCaches();
+                              }}
+                            />
                             {isOwner && order.dispatched_by_autopilot && (
                               <span
                                 className="inline-flex items-center gap-1 text-[10px] font-medium leading-none text-muted-foreground"
