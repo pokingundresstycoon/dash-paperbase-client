@@ -38,6 +38,35 @@ export const WHATS_NEW_MAX_ENTRIES = 30;
 
 export const WHATS_NEW_ENTRIES: readonly WhatsNewEntry[] = [
   {
+    id: "2026-11-01-notes-on-orders",
+    date: "2026-11-01",
+    version: "3.4.0",
+    tag: "new",
+    title: {
+      en: "A note on every order",
+      bn: "প্রতিটি অর্ডারে একটি নোট",
+    },
+    body: {
+      en: "Your team can now keep a note on any order: click the small note icon beside the order number in Orders. Point at a coloured icon to read the note. Only your team sees it, never the customer.",
+      bn: "আপনার টিম এখন যেকোনো অর্ডারে একটি নোট রাখতে পারে: অর্ডার পেজে অর্ডার নম্বরের পাশের ছোট নোট আইকনে ক্লিক করুন। রঙিন আইকনের ওপর মাউস রাখলে নোটটি পড়া যায়। এটি শুধু আপনার টিম দেখতে পায়, গ্রাহক কখনো দেখেন না।",
+    },
+    href: "/orders",
+  },
+  {
+    id: "2026-11-01-security-updates",
+    date: "2026-11-01",
+    version: "3.4.0",
+    tag: "fixed",
+    title: {
+      en: "Security updates",
+      bn: "নিরাপত্তা আপডেট",
+    },
+    body: {
+      en: "We updated the parts your dashboard and shop are built on, closing known security issues. Nothing changes in how you use them.",
+      bn: "আপনার ড্যাশবোর্ড ও দোকান যেসব অংশ দিয়ে তৈরি, সেগুলো আপডেট করে জানা নিরাপত্তা সমস্যাগুলো বন্ধ করা হয়েছে। আপনার ব্যবহারে কিছুই বদলাবে না।",
+    },
+  },
+  {
     id: "2026-09-18-fraud-check-new-provider",
     date: "2026-09-18",
     version: "3.3.4",
