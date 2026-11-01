@@ -150,6 +150,11 @@ export function OrderNoteButton({ order, onSaved, className }: OrderNoteButtonPr
         placeholder={t("placeholder")}
         aria-label={t("label", { orderNumber })}
         className="max-h-56 min-h-28 resize-none bg-input-surface text-base leading-relaxed md:text-sm"
+        onFocus={(event) => {
+          // Reopened to add to it: the caret goes after the words, not before them.
+          const end = event.target.value.length;
+          event.target.setSelectionRange(end, end);
+        }}
         onChange={(event) => {
           setDraft(event.target.value);
           setNudged(false);
