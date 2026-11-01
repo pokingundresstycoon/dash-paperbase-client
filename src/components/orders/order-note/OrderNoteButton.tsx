@@ -244,6 +244,9 @@ export function OrderNoteButton({ order, onSaved, className }: OrderNoteButtonPr
                 aria-label={
                   hasNote ? t("read", { orderNumber }) : t("add", { orderNumber })
                 }
+                onPointerEnter={() => {
+                  skipPeek.current = false;
+                }}
                 onClick={() => {
                   // Popover.Trigger opens the card; a phone gets the sheet from `show`.
                   if (open && surface === "sheet") requestClose();
