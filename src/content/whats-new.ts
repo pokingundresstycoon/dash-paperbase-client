@@ -38,6 +38,21 @@ export const WHATS_NEW_MAX_ENTRIES = 30;
 
 export const WHATS_NEW_ENTRIES: readonly WhatsNewEntry[] = [
   {
+    id: "2026-11-12-order-pages-and-page-size",
+    date: "2026-11-12",
+    version: "3.5.0",
+    tag: "improved",
+    title: {
+      en: "Pick your page, and how many orders it holds",
+      bn: "যে পাতায় খুশি যান, যত খুশি অর্ডার নিয়ে",
+    },
+    body: {
+      en: "The orders list now has page numbers you can jump to, and you choose how many orders a page holds: 24, 48 or 96. Where you are is kept in the web address, so refreshing the page leaves you where you were instead of sending you back to the top.",
+      bn: "অর্ডারের তালিকায় এখন পাতার নম্বর আছে, যে পাতায় খুশি যেতে পারেন, আর এক পাতায় ২৪, ৪৮ বা ৯৬টি অর্ডার রাখতে পারেন। আপনি কোন পাতায় আছেন তা ঠিকানায় থাকে, তাই রিফ্রেশ করলে আর শুরুতে ফিরে যেতে হয় না।",
+    },
+    href: "/orders",
+  },
+  {
     id: "2026-11-01-notes-on-orders",
     date: "2026-11-01",
     version: "3.4.0",
