@@ -1999,6 +1999,15 @@
     "genericTitle": "Something went wrong",
     "genericBody": "Please try again later."
   },
+  "pager": {
+    "label": "List pages",
+    "totalLabel": "Total",
+    "previous": "Previous page",
+    "next": "Next page",
+    "goToPage": "Page {page}",
+    "perPage": "Rows per page",
+    "perPageAria": "Rows per page"
+  },
   "orderNote": {
     "add": "Add a note to order {orderNumber}",
     "read": "Read the note on order {orderNumber}",

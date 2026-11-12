@@ -315,8 +315,11 @@ export interface PaginatedResponse<T> {
   next: string | null;
   previous: string | null;
   results: T[];
-  /** PageNumberPagination only; cursor lists omit this. */
   count?: number;
+  /** Page numbers: the order list carries these; a cursor list does not. */
+  page?: number;
+  pages?: number;
+  page_size?: number;
 }
 
 /** Admin trashed product row (`GET/DELETE admin/trash/`, `POST admin/trash/{public_id}/restore/`). */

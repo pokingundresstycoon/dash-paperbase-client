@@ -1999,6 +1999,15 @@
     "genericTitle": "কিছু সমস্যা হয়েছে",
     "genericBody": "অনুগ্রহ করে কিছুক্ষণ পরে আবার চেষ্টা করুন।"
   },
+  "pager": {
+    "label": "তালিকার পাতা",
+    "totalLabel": "মোট",
+    "previous": "আগের পাতা",
+    "next": "পরের পাতা",
+    "goToPage": "পাতা {page}",
+    "perPage": "প্রতি পাতায় সারি",
+    "perPageAria": "প্রতি পাতায় কত সারি"
+  },
   "orderNote": {
     "add": "অর্ডার {orderNumber} এ নোট যোগ করুন",
     "read": "অর্ডার {orderNumber} এর নোট পড়ুন",
